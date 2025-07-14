@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLC_FX", "PLC_FX\PLC_FX.csproj", "{950620BF-7CEB-4811-88B0-717E2C95C13A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{950620BF-7CEB-4811-88B0-717E2C95C13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950620BF-7CEB-4811-88B0-717E2C95C13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950620BF-7CEB-4811-88B0-717E2C95C13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950620BF-7CEB-4811-88B0-717E2C95C13A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33C82F8E-5149-4E2D-B5EB-D86378C968EF}
+	EndGlobalSection
+EndGlobal
