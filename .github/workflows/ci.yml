@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build (.NET Framework 4.7.2)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Set up NuGet
+        uses: NuGet/setup-nuget@v2
+
+      - name: Restore packages
+        run: nuget restore PLC_FX.sln
+
+      - name: Build
+        run: msbuild PLC_FX.sln /p:Configuration=Release /p:Platform="Any CPU" /m
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: PLC_FX-Release
+          path: PLC_FX/bin/Release/
+          if-no-files-found: error
