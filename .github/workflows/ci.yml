@@ -28,7 +28,7 @@ jobs:
         run: msbuild PLC_FX.sln /p:Configuration=Release /p:Platform="Any CPU" /m
 
       - name: Upload build output
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: PLC_FX-Release
           path: PLC_FX/bin/Release/
